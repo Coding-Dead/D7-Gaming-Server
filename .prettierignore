@@ -1,0 +1,10 @@
+# Dot files
+.prettierignore
+.eslintconfig
+.eslintrc
+
+# other
+node_modules
+.expo
+android
+ios
