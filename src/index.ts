@@ -43,7 +43,7 @@ const addScore = (name: string, score: number): boolean => {
 
 const getPosition = (name: string): UserScore | null => {
     const userExists = checkUserExists.get({$user_name: name});
-    if (userExists) {
+    if (!userExists) {
         return null;
     }
     return getUserPosition.get({$user_name: name}) as UserScore;
