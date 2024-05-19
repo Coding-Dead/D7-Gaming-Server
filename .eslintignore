@@ -1,0 +1,15 @@
+# config files
+babel.config.js
+
+# Dot files
+.prettierignore
+.gitignore
+.eslintignore
+.eslintrc
+
+# other
+src/__generated__
+node_modules
+.expo
+android
+ios

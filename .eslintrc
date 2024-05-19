@@ -1,0 +1,27 @@
+{
+  "root": true,
+  "extends": ["plugin:@typescript-eslint/recommended", "plugin:json/recommended", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "json", "unused-imports", "prettier", "react"],
+  "settings": {
+  },
+  "rules": {
+    "quotes": [2, "single", "avoid-escape"],
+    "no-void": 0,
+    "no-shadow": 0,
+    "prefer-destructuring": 0,
+    "@typescript-eslint/no-empty-function": 0,
+    "@typescript-eslint/no-shadow": ["warn"],
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/no-unused-vars": 0,
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      { "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
+    ],
+    "no-duplicate-imports": "error",
+    "prettier/prettier": "error",
+    // TODO: fix, can't load correct max line length
+    // "max-len": "error"
+  }
+}
